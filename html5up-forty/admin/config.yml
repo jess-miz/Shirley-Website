@@ -7,30 +7,30 @@ public_folder: "/images"
 
 collections:
 
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+- name: "blog" # Used in routes, e.g., /admin/collections/blog
+  label: "Blog" # Used in the UI
+  folder: "_posts/blog" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Featured Image", name: "thumbnail", widget: "image"}
+    - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+    - {label: "Body", name: "body", widget: "markdown"}
 
       
+- name: "Shows" # Used in routes, e.g., /admin/collections/blog
+  label: "Shows" # Used in the UI
+  folder: "Shows.html" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Date", name: "date", widget: "date"}
+    - {label: "Show", name: "show", widget: "string"}
+    - {label: "Time", name: "time", widget: "time"}
+    - {label: "Location", name: "location", widget: "string"}
+    - {label: "Tickets", name: "tickets", widget: "string"}
 
-   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      
