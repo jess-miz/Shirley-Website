@@ -23,13 +23,13 @@ collections:
       
 - name: "Shows" # Used in routes, e.g., /admin/collections/blog
   label: "Shows" # Used in the UI
-  folder: "Shows.html" # The path to the folder where the documents are stored
+  folder: "" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
     - {label: "Date", name: "date", widget: "date"}
     - {label: "Show", name: "show", widget: "string"}
-    - {label: "Time", name: "time", widget: "time"}
+    - {label: "Time", name: "time", widget: "datetime"}
     - {label: "Location", name: "location", widget: "string"}
     - {label: "Tickets", name: "tickets", widget: "string"}
 
