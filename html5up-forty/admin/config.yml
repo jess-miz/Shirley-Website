@@ -20,7 +20,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
       
-collections:
   - name: "Shows" # Used in routes, e.g., /admin/collections/blog
     label: "Shows" # Used in the UI
     folder: "Shows.html" # The path to the folder where the documents are stored
