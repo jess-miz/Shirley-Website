@@ -217,6 +217,7 @@ input, select, textarea {
 
 	h6 {
 		font-size: 0.7em;
+		margin: 2rem 0 1.5rem 0;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -1772,9 +1773,14 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	.bioSection {
+	section #blog {
+		box-sizing: border-box;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+
+	section.aln-left {
 		margin: -2em 5em 0 0;
-	
 	}
 
 	header.major {
@@ -2240,18 +2246,10 @@ input, select, textarea {
 /* Video */ 
 
 .firstVideo {
-	margin: -1rem 2rem 0 -3rem;
+	flex-basis: 1 0 50%;
+	margin: -4.7rem 0 0 0;
 	
 }
-
-.secondVideo {
-	margin: -1rem 0 0 2rem;
-}
-
-section h3 {
-	height: 100px;
-}
-
 
 h1 
 

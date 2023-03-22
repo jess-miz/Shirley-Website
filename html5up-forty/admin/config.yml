@@ -7,6 +7,18 @@ public_folder: "/images"
 
 collections:
 
+- name: "homepage" # Used in routes, e.g., /admin/collections/blog
+  label: "Homepage" # Used in the UI
+  folder: "shows" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Date", name: "date", widget: "date"}
+    - {label: "Show", name: "show", widget: "string"}
+    - {label: "Time", name: "time", widget: "string"}
+    - {label: "Location", name: "location", widget: "string"}
+    - {label: "Tickets", name: "tickets", widget: "string"}
+
 - name: "blog" # Used in routes, e.g., /admin/collections/blog
   label: "Blog" # Used in the UI
   folder: "_posts/blog" # The path to the folder where the documents are stored
@@ -21,7 +33,7 @@ collections:
     - {label: "Body", name: "body", widget: "markdown"}
 
       
-- name: "Shows" # Used in routes, e.g., /admin/collections/blog
+- name: "shows" # Used in routes, e.g., /admin/collections/blog
   label: "Shows" # Used in the UI
   folder: "shows" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
@@ -29,8 +41,44 @@ collections:
   fields: # The fields for each document, usually in front matter
     - {label: "Date", name: "date", widget: "date"}
     - {label: "Show", name: "show", widget: "string"}
-    - {label: "Time", name: "time", widget: "datetime"}
+    - {label: "Time", name: "time", widget: "string"}
     - {label: "Location", name: "location", widget: "string"}
     - {label: "Tickets", name: "tickets", widget: "string"}
 
+
+- name: "bio" # Used in routes, e.g., /admin/collections/blog
+  label: "Shows" # Used in the UI
+  folder: "shows" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Date", name: "date", widget: "date"}
+    - {label: "Show", name: "show", widget: "string"}
+    - {label: "Time", name: "time", widget: "string"}
+    - {label: "Location", name: "location", widget: "string"}
+    - {label: "Tickets", name: "tickets", widget: "string"}
+
+- name: "press" # Used in routes, e.g., /admin/collections/blog
+  label: "Shows" # Used in the UI
+  folder: "shows" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Date", name: "date", widget: "date"}
+    - {label: "Show", name: "show", widget: "string"}
+    - {label: "Time", name: "time", widget: "string"}
+    - {label: "Location", name: "location", widget: "string"}
+    - {label: "Tickets", name: "tickets", widget: "string"}
+
+- name: "clips" # Used in routes, e.g., /admin/collections/blog
+  label: "Shows" # Used in the UI
+  folder: "shows" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Date", name: "date", widget: "date"}
+    - {label: "Show", name: "show", widget: "string"}
+    - {label: "Time", name: "time", widget: "string"}
+    - {label: "Location", name: "location", widget: "string"}
+    - {label: "Tickets", name: "tickets", widget: "string"}
       
