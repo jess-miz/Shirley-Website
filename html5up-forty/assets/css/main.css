@@ -1827,7 +1827,6 @@ input, select, textarea {
 	justify-content: center; 
 	align-items: center;
 	flex-direction: column;
-	padding: 40px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 	
 	
