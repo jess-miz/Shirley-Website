@@ -29,7 +29,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
+
+	body {
 	line-height: 1;
 }
 
@@ -95,7 +96,7 @@ input, select, textarea {
 	}
 
 	*, *:before, *:after {
-		box-sizing: inherit;
+		box-sizing: border-box;
 	}
 
 	body {
@@ -200,7 +201,6 @@ input, select, textarea {
 	h2 {
 		font-size: 1.75em;
 	}
-
 	h3 {
 		font-size: 1.35em;
 	}
@@ -1822,13 +1822,15 @@ input, select, textarea {
 	}
 /* Blog */
 
-#blog section {
+#blog {
 	display: flex; 
 	justify-content: center; 
 	align-items: center;
 	flex-direction: column;
 	padding: 40px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	
+	
 }
 
 .blog-heading {
@@ -1836,6 +1838,7 @@ input, select, textarea {
 	justify-content: center; 
 	align-items: center;
 	flex-direction: column;
+	
 }
 
 .blog-heading span {
@@ -1854,13 +1857,15 @@ input, select, textarea {
 	align-items: center;
 	margin: 20px 0px;
 	flex-wrap: wrap;
+	
 }
 
 .blog-box {
 	width: 350px;
 	background-color: #ffffff;
-	border: 1px solid #525252;
+	border: 1px solid #929191;
 	margin: 20px;
+	
 }
 
 .blog-img {
@@ -2314,15 +2319,6 @@ input, select, textarea {
 
 			}
 
-/* Video */ 
-
-.firstVideo {
-	flex-basis: 1 0 50%;
-	margin: -4.7rem 0 0 0;
-	
-}
-
-h1 
 
 /* List */
 
