@@ -88,6 +88,7 @@ input, select, textarea {
 		html, body {
 			min-width: 320px;
 		}
+		
 
 	}
 
@@ -920,6 +921,7 @@ input, select, textarea {
 
 				.row > .col-12-large {
 					width: 100%;
+					margin-top: 2rem;
 				}
 
 				.row > .off-12-large {
@@ -1655,6 +1657,7 @@ input, select, textarea {
 
 				.row > .col-12-xsmall {
 					width: 100%;
+					margin-top: 2rem;
 				}
 
 				.row > .off-12-xsmall {
@@ -2600,6 +2603,37 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
+	
+		@media screen and (max-width: 480px) {
+			.default thead {
+				display: none;
+			}
+	
+			.default tr {
+				margin-bottom: .5rem;
+			}
+	
+			.default, .default tbody, .default tr, .default td {
+				display: block;
+				width: 100%;
+			}
+	
+			.default tbody tr td {
+				text-align: right;
+				padding-left: 50%;
+				position: relative;	
+				
+			}
+			.default td::before {
+				content: attr(data-label);
+				position: absolute;
+				left: 0;
+				width: 50%;
+				font-weight: 700;
+				padding: 0 0 0 1rem;
+				text-align: left;
+			}
+		}
 
 /* Button */
 
@@ -2934,27 +2968,27 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+				background-color: #8cd5ed;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+				background-color: #f9f34c;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #9257c3;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #f77c3f;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #af416b;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
+				background-color: #71f57c;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3562,22 +3596,22 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #7fdfff;
 		}
 		#banner.style3:after {
-			background-color: #ec8d81;
+			background-color: #ff60ef;
 		}
 
 		#banner.style4:after {
-			background-color: #e7b788;
+			background-color: #ffef40;
 		}
 
 		#banner.style5:after {
-			background-color: #8ea9e8;
+			background-color: #3bff21;
 		}
 
 		#banner.style6:after {
-			background-color: #87c5a4;
+			background-color: #9022ff;
 		}
 
 		body.is-preload #banner:after {
