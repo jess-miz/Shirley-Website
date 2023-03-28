@@ -2611,6 +2611,7 @@ input, select, textarea {
 	
 			.default tr {
 				margin-bottom: .5rem;
+				border-bottom: 5px solid cyan;
 			}
 	
 			.default, .default tbody, .default tr, .default td {
