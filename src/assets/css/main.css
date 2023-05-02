@@ -1878,18 +1878,6 @@ input, select, textarea {
 	
 }
 
-.blog-img {
-	width: 100%;
-	height: auto;
-}
-
-.blog-img img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-}
-
 .blog-text {
 	color: black;
 	padding: 30px;
@@ -2233,6 +2221,12 @@ input, select, textarea {
 			padding: 0;
 		}
 
+		@media screen and (max-width: 480px) {
+			.box.alt {
+				margin-right: 1.5em;
+			}
+		}
+
 /* Icon */
 
 	.icon {
@@ -2302,8 +2296,9 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
-		height: 50%;
+		height: auto;
 		width: 100%;
+		max-width: 100%;
 	}
 
 	.image.press {
@@ -2313,6 +2308,10 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
 		}
 
 
@@ -2363,6 +2362,12 @@ input, select, textarea {
 
 				.image.main {
 					margin: 1.5em 0;
+				}
+				.image.right {
+					max-width: 100%;
+				}
+				.image.left {
+					margin: 0 1em .5em 0;
 				}
 
 			}
@@ -2657,7 +2662,12 @@ input, select, textarea {
 	
 			.default tr {
 				margin-bottom: .5rem;
-				border-bottom: 5px solid cyan;
+				border-bottom: 2px solid cyan;
+				max-width: 100%;
+			}
+
+			.first {
+				border-top: 2px solid cyan;
 			}
 	
 			.default, .default tbody, .default tr, .default td {
@@ -2679,6 +2689,10 @@ input, select, textarea {
 				font-weight: 700;
 				padding: 0 0 0 1rem;
 				text-align: left;
+			}
+
+			#main.inner {
+				margin: 0 2em 0 -2em;
 			}
 		}
 
@@ -3540,16 +3554,9 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		padding: 6em 0 2em 0 ;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 60vh;
-		margin-bottom: -3.25em;
-		max-height: 32em;
-		min-height: 22em;
+		height: 100%;
 		position: relative;
 		top: -3.25em;
 	}
@@ -3576,7 +3583,8 @@ input, select, textarea {
 		}
 
 		#banner h1 {
-			font-size: 3.25em;
+			font-size: 4em;
+			
 		}
 
 		#banner > .inner {
@@ -3586,7 +3594,6 @@ input, select, textarea {
 			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
 			padding: 0 !important;
 			position: relative;
-			z-index: 2;
 		}
 
 			#banner > .inner .image {
@@ -3636,7 +3643,8 @@ input, select, textarea {
 		#banner.major {
 			height: 75vh;
 			min-height: 30em;
-			max-height: 50em;
+			box-sizing: border-box;
+			
 		}
 
 			#banner.major.alt {
@@ -3690,9 +3698,8 @@ input, select, textarea {
 
 			#banner {
 				padding: 5em 0 1em 0 ;
-				height: auto;
+				height: 100%;
 				margin-bottom: -2.75em;
-				max-height: none;
 				min-height: 0;
 				top: -2.75em;
 			}
@@ -3711,9 +3718,7 @@ input, select, textarea {
 					}
 
 				#banner.major {
-					height: auto;
 					min-height: 0;
-					max-height: none;
 				}
 
 		}
@@ -3890,6 +3895,22 @@ input, select, textarea {
 
 	}
 
+/* Background */
+.background {
+	background-image: url('../images/homepage.avif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 6em;
+}
+
+.background > * > .inner {
+
+	margin: 0 auto;
+	max-width: 65em;
+	width: calc(100% - 6em);
+}
+
 /* Wrapper */
 
 	#wrapper {
@@ -3898,6 +3919,7 @@ input, select, textarea {
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		padding-top: 3.25em;
+	
 	}
 
 		#wrapper.is-transitioning {
@@ -3914,19 +3936,18 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#wrapper > * > .inner {
-					padding: 3em 0 1em 0 ;
+					padding: 3em 0 4.25em 0 ;
 					width: calc(100% - 3em);
+				}
+				#wrapper {
+					padding-top: 2.75em;
+					
 				}
 
 			}
 
-		@media screen and (max-width: 736px) {
 
-			#wrapper {
-				padding-top: 2.75em;
-			}
-
-		}
+		
 
 /* Menu */
 
