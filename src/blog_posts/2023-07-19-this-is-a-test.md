@@ -2,7 +2,7 @@
 title: This is a test
 author: Jess Misra
 date: 2023-07-19T19:07:00.000Z
-image: /assets/image/001_jessicamisra_01.2021.jpg
+image: /assets/image/press1.avif
 imageAlt: Testing <3
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 ---
