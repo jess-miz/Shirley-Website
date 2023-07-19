@@ -1942,9 +1942,14 @@ input, select, textarea {
 
 .main-article__figure figcaption {
     margin: 1rem 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     opacity: .9;
   }
+figure > img {
+	width: 60%;
+
+}
+
 /* Form */
 
 	form {
