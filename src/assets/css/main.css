@@ -1882,7 +1882,7 @@ input, select, textarea {
 
 .blog-box {
 	width: 350px;
-	height: 610px;
+	height: 625px;
 	background-color: #ffffff;
 	border: 1px solid #929191;
 	margin: 20px;
@@ -1905,8 +1905,12 @@ input, select, textarea {
 	font-size: .9rem;
 }
 
-.blog-text ..blog-title:hover {
+.blog-text .blog-title:hover {
 	transition: all ease 0.3s;
+}
+
+.blog-title {
+	height: 55px;
 }
 
 .blog-text p {
