@@ -1889,6 +1889,11 @@ input, select, textarea {
 	
 }
 
+.blog-image {
+	height: 300px;
+	width: 100%;
+}
+
 .blog-text {
 	color: black;
 	padding: 30px;
@@ -1913,6 +1918,7 @@ input, select, textarea {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	margin: 20px 0;
+	height: 100px;
 }
 /* Article */
 .flow > *:where(:not(:first-child)) {
@@ -2315,8 +2321,7 @@ figure > img {
 		border: 0;
 		display: inline-block;
 		position: relative;
-		height: auto;
-		width: 100%;
+		
 		max-width: 100%;
 	}
 
@@ -2386,7 +2391,7 @@ figure > img {
 					max-width: 100%;
 				}
 				.image.left {
-					margin: 0 1em .5em 0;
+					max-width: none;
 				}
 
 			}

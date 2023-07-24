@@ -14,7 +14,7 @@ layout: 'base.njk'
 		{%- for post in collections.post | reverse -%}
 								
 			<div class="blog-box">
-				<div class="image">
+				<div class="image blog-image">
 					<img src="{{post.data.image}}" alt="{{post.data.imageAlt}}">
 				</div>
 				<div class="blog-text">
