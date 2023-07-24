@@ -1882,6 +1882,7 @@ input, select, textarea {
 
 .blog-box {
 	width: 350px;
+	height: 610px;
 	background-color: #ffffff;
 	border: 1px solid #929191;
 	margin: 20px;
