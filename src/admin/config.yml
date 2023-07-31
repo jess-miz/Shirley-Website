@@ -18,9 +18,9 @@ collections:
       - {label: "Image Caption", name: "imageAlt", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      
-   - name: "shows"
-    label: "Shows"
+
+  - name: "show"
+    label: "Show"
     folder: "src/shows"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
