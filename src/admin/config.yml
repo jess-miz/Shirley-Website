@@ -44,6 +44,18 @@ collections:
       - {label: "Image Alt", name: "imageAlt", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Link", name: "link", widget: "string"}
+
+  - name: "podcast"
+    label: "Podcast"
+    folder: "src/podcast"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image Alt", name: "imageAlt", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
       
       
 
