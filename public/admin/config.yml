@@ -25,14 +25,25 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: 
-      - {label: "Month", name: "month", widget: "string"}
+      - {label: "Month", name: "month", widget: "string", required: false }
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Show", name: "show", widget: "string"}
       - {label: "Time", name: "time", widget: "string"}
       - {label: "Location", name: "location", widget: "string"}
-      - {label: "Tickets", name: "tickets", widget: "string"}
-      - {label: "More Info", name: "More Info", widget: "string"}
+      - {label: "Tickets", name: "tickets", widget: "string", required: false}
+      - {label: "More Info", name: "moreInfo", widget: "string", required: false}
 
-
+  - name: "press"
+    label: "Press"
+    folder: "src/press"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image Alt", name: "imageAlt", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+      
       
 

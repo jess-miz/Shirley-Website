@@ -4,36 +4,42 @@ layout: 'base.njk'
 
 ---
 
-					<section>
-						<div class="inner">
-							<header>
-								<h1><em>Press</em></h1>
-							</header>
-						</div>
-					</section>
-					<section class="row">
-							<h2> Articles </h2>
-					</section>
-						<!-- Two -->
-							<section class="spotlights">
-								<section class="blog-container">
-									<div class="image">
-										<img width="500" height="250" src="/assets/images/press1.avif" alt="Shirley Blazen Headshot" data-position="center center" />
-									</div>
-									<div class="content">
-										<section>
-											<header>
-												<h3>Meet Shirley Blazen of Shirley Blazen The Oh So Amazin’ in Avondale</h3>
-											</header>
-											<p>Blazen’s adventure began where most art manifests, at the corner of curiosity and conflict. I was coming to terms with trauma, seeking a way to reaffirm my autonomy. I struggled with self-esteem and into my life came an ad for a burlesque class. After wrestling with my inner demons, I threw nerves into the wind, put my best heel forward and fell in love with Burlesque...</p>
-											<ul class="actions">
-												<li><a href="http://voyagechicago.com/interview/meet-shirley-blazen-shirley-blazen-oh-amazin-avondale/" target="_blank" rel ="noreferrer noopener" class="button">Read More</a></li>
-											</ul>
-										</section>
-									</div>
-								</section>
-								<section class="blog-container">
-									<div class="image press" >
+<section>
+	<div class="inner">
+		<header>
+			<h1><em>Press</em></h1>
+		</header>
+	</div>
+</section>
+<section class="row">
+	<h2> Articles </h2>
+</section>
+						
+<section class="spotlights">
+
+	{%- for press in collections.press | reverse -%}
+		<section class="blog-container">
+			<div class="image">
+				<img width="500" height="250" src="{{press.data.image}}" alt="{{press.data.imageAlt}}" data-position="center center" />
+			</div>
+			<div class="content">
+				<section>
+					<header>
+						<h3>{{press.data.title}}</h3>
+					</header>
+					<p>{{press.data.description}}</p>
+					<ul class="actions">
+						<li><a href="{{press.data.link}}" target="_blank" rel ="noreferrer noopener" class="button">Read More</a></li>
+					</ul>
+					
+				</section>
+			</div>
+		</section>
+
+	{%-endfor-%}
+								
+				{#				<section class="blog-container">
+									<div class="image" >
 										<img loading="lazy" width="500" height="250" src="/assets/images/press2.avif" alt="Shirley Blazen flexing" data-position="top center"/>
 									</div>
 									<div class="content">
@@ -63,9 +69,13 @@ layout: 'base.njk'
 											</ul>
 										</section>
 									</div>
-								</section>
-							</section>
-					<section class="row">
+								</section> #}
+</section>
+
+
+
+{#
+<section class="row">
 						<h2> Podcasts Appearances</h2>
 						<div class ="row inner">
 							<div class ="box alt">
@@ -87,6 +97,5 @@ layout: 'base.njk'
 									<p>Side Quests is back and this episode's host is comic, clown, burlesque performer/producer, and ass kicker on a mission to get their boyfriend back, Shirley Blazen! The game they are talking about today is River City Girls by WayForward and Arc System Works.</p>
 									<a class="button"href="https://funandgames.libsyn.com/side-quests-episode-159-river-city-girls-with-shirley-blazen"target="_blank" rel ="noreferrer noopener"> Listen Now </a>
 								</section>
-							</div>
-						</div>
-					</section>
+							</div> 
+</section> #}
