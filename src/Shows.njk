@@ -9,8 +9,9 @@ month: July
 
 						
 	<h1><em>{{ title }}</em></h1>
-	
-		<h4>{{ month }}</h4>
+	{%- for show in collections.show -%}
+		<h4>{{show.data.month}}</h4>
+	{%-endfor-%}
 	
 		<div class="table-wrapper">
 			<table class="default">
@@ -32,7 +33,10 @@ month: July
 							<td data-label="Location">{{show.data.location}}</td>
 							<td data-label="Tickets"><a href="{{show.data.tickets}}" target="_blank" rel="noreferrer noopener" class="button primary">Tickets</a></td>
 						</tr>
-																	
+
+						{% else %}
+						<table><strong> More Shows Coming Soon!</strong></table>
+
 					{%-endfor-%}				
 				</tbody>
 			</table>
