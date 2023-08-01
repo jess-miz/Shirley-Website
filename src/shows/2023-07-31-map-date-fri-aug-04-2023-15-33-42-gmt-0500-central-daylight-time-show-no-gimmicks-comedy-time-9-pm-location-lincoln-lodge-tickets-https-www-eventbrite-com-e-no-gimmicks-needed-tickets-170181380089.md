@@ -1,4 +1,5 @@
 ---
+month: August
 date: 2023-08-04T20:33:42.567Z
 show: "No Gimmicks Comedy "
 time: 10 PM
