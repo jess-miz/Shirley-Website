@@ -22,6 +22,7 @@ month: July
 							<th scope="col">Time</th>
 							<th scope="col">Location</th>
 							<th scope="col">Tickets</th>
+							<th scope="col">More Info</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -32,6 +33,7 @@ month: July
 							<td data-label="Time">{{show.data.time}}</td>
 							<td data-label="Location">{{show.data.location}}</td>
 							<td data-label="Tickets"><a href="{{show.data.tickets}}" target="_blank" rel="noreferrer noopener" class="button primary">Tickets</a></td>
+							<td data-label="More Info">{{show.data.moreInfo}}</td>
 						</tr>
 
 						{% else %}
