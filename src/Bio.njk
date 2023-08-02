@@ -5,25 +5,28 @@ layout: 'base.njk'
 		
 
 
-	<div id="main">
-
+<div id="main">
+	<div class="inner">
 				
 		<section>
-			<div class="inner">
 				<header>
-					<h1><em>Bio</em></h1>
+					<h1><em>{{ title }}</em></h1>
 				</header>
-			</div>
-		<section>
-			<span class="image right"><img width="250" height="250" src="/assets/images/bio.avif" alt="Shirley Blazen Bio Picture"/></span>
-		</section>
-		<section>
-			<p>Shirley Blazen is an award-winning comedy performer and theatrical director who is infamous for her burlesque, comedy, and clowning. Chicago's Screwiest Showpony and self-proclaimed Hostess with the Mayo-stess, Blazen is committed to delivering high-energy hijinks and creating inclusive spaces for subversive performance art in the second city.</p>
-			<p>	She's internationally recognized as the headliner of Critical Strike Nerdlesque Fest, a feature of the Fierce! Queer Performing Arts Festival, Chicago Women’s Funny and Nerd Comedy expos, and is the winner of Master of Lipsync at 2020 Burlypicks. </p>
-			<p>	The Executive Director and Choreographer of <a href="https://linktr.ee/screwbelles" target="_blank" rel="noreferrer noopener">The Screwbelles</a>, a womxn and nonbinary slapstick sketch ensemble, and co-creator of Chaotic Erotic’s Love Circus, Shirley is a prominent figure in Chicago's neo-vaudeville revival. </p>
-			<p>	Blazen has directed over 50 unique theatrical productions, garnering press in the Chicago Reader, Voyage Chicago, and Third Coast Review. Shirley’s production efforts include fundraising over $1,500 in charitable donations for Chicago community organizations that support underserved women, children, and LGBTQIA+ populations. </p>	
-			<p>	Shirley is currently in production for season 1 of Clown House for OFTV, directing Love Circus Cabaret, and performing wherever zany shtick can be peddled.</p>
-		</section>	
-	</div>
+
+		{%- for bio in collections.bio -%}
+			<section>
+				<span class="image right"><img width="250" height="250" src="{{bio.data.image}}" alt="{{bio.data.imageAlt}}"/></span>
+			</section>
+			<section >
+				<p>{{bio.data.paragraph1}}</p>
+				<p>	{{bio.data.paragraph2}}</p>
+				<p>	{{bio.data.paragraph3}}</p>
+				<p>	{{bio.data.paragraph4}}</p>	
+				<p>	{{bio.data.paragraph5}}</p>
+			</section>
+
+		{%-endfor-%}
+	</div>	
+</div>
 	
 			
