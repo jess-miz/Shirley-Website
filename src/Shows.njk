@@ -1,5 +1,4 @@
 ---
-title: Shows
 layout: 'base.njk'
 month: July
 ---
@@ -8,7 +7,7 @@ month: July
 <div id="main" class="inner">
 
 						
-	<h1><em>{{ title }}</em></h1>
+	<h1><em>Shows</em></h1>
 	{%- for show in collections.show -%}
 		<h4>{{show.data.month}}</h4>
 	{%-endfor-%}
@@ -29,7 +28,7 @@ month: July
 					{%- for show in collections.show -%}
 						<tr>
 							<td data-label="Date">{{show.data.date | postDate}}</td>
-							<td data-label="Show">{{show.data.show}}</td>
+							<td data-label="Show">{{show.data.title}}</td>
 							<td data-label="Time">{{show.data.time}}</td>
 							<td data-label="Location">{{show.data.location}}</td>
 							<td data-label="Tickets"><a href="{{show.data.tickets}}" target="_blank" rel="noreferrer noopener" class="button primary">Tickets</a></td>

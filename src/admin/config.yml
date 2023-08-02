@@ -60,7 +60,7 @@ collections:
   - name: "bio"
     label: "Bio"
     folder: "src/bio"
-    create: true
+    create: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: 
       - {label: "Title", name: "title", widget: "string"}

@@ -56,6 +56,22 @@ collections:
       - {label: "Image Alt", name: "imageAlt", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Link", name: "link", widget: "string"}
+
+  - name: "bio"
+    label: "Bio"
+    folder: "src/bio"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image Alt", name: "imageAlt", widget: "string"}
+      - {label: "Paragraph 1", name: "paragraph1", widget: "string"}
+      - {label: "Paragraph 2", name: "paragraph2", widget: "string"}
+      - {label: "Paragraph 3", name: "paragraph3", widget: "string"}
+      - {label: "Paragraph 4", name: "paragraph4", widget: "string"}
+      - {label: "Paragraph 5", name: "paragraph5", widget: "string"}
+      
       
       
 
