@@ -1,4 +1,6 @@
 const { DateTime } = require('luxon');
+const { compress } = require('eleventy-plugin-compress');
+
 
 
 module.exports = function(eleventyConfig) {
@@ -13,6 +15,10 @@ module.exports = function(eleventyConfig) {
     })
 
     eleventyConfig.addShortcode("month", () => `${new Date().toLocaleString('default', {month: 'long'})}`);
+
+    eleventyConfig.addPlugin(compress, {
+		enabled: true 
+	});
 
   
     
