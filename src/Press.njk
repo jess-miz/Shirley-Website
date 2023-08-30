@@ -26,12 +26,9 @@ layout: 'base.njk'
 			<div class="content">
 				<section>
 					<header>
-						<h3>{{press.data.title}}</h3>
+						<h3><a href="{{press.data.link}}" target="_blank" rel ="noreferrer noopener">{{press.data.title}}</a></h3>
 					</header>
 					<p>{{press.data.description}}</p>
-					<ul class="actions">
-						<li><a href="{{press.data.link}}" target="_blank" rel ="noreferrer noopener" class="button">Read More</a></li>
-					</ul>
 					
 				</section>
 			</div>
@@ -47,13 +44,12 @@ layout: 'base.njk'
 			{%- for podcast in collections.podcast -%}
 
 				<div class ="box alt">
-					<h3>{{podcast.data.title}}</h3>
+					<h3><a href ="{{podcast.data.link}}" target="_blank" rel ="noreferrer noopener">{{podcast.data.title}}</a></h3>
 					<section>
 						<img loading="lazy" width="250" height="250" class="image left" src="{{podcast.data.image}}" alt="{{podcast.data.imageAlt}}" />
 					</section>
 					<section>
 						<p>{{podcast.data.description}}</p>
-						<a class= "button" href ="{{podcast.data.link}}" target="_blank" rel ="noreferrer noopener"> Listen Now</a>
 					</section>
 				</div>
 
