@@ -5,10 +5,8 @@ date: 2023-09-24T19:38:47.886Z
 image: /assets/images/welcome-to-my-new-website-square-instagram-post-square-.png
 imageAlt: The various faces of Comeback Clown, Shirley Blazen, celebrating a
   triumphant return to performing.
-description: Pink-haired clown, Shirley Blazen, is pictured on a confetti filled
-  background. Shirley is pictured posing in various pink, blue and yellow
-  costumes. Shirley is jumping up from the center text that reads "BLAZEN IS
-  BACK"
+description: The various faces of Comeback Clown, Shirley Blazen, celebrating a
+  triumphant return to performing.
 ---
 🔥 SHIRLEY BLAZEN IS BACK! 🔥
 
