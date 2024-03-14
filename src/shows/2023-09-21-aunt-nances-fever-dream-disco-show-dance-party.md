@@ -1,5 +1,5 @@
 ---
-date: 2023-10-15T23:00:00.000Z
+date: 2024-04-07T23:00:00.000Z
 title: Aunt Nance's Fever Dream Disco Show + Dance Party!
 time: 6:00 PM
 location: The Newport Theater  956 West Newport Avenue Chicago, IL 60657
